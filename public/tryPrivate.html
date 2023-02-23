@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try to look at /private</title>
+    <script>
+        function redirectToLogin(){
+            window.location.href = "./login.html";
+        }
+        function redirectToRegister(){
+            window.location.href = "./registretion.html";
+        }
+    </script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .content {
+                text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>
+            Try to look at "/private"
+        </h1>
+        <p>
+            if you logged in and you have Session<br>
+            you can try and accesse the private page
+        </p>         
+        <p>
+            if you NOT logged in press  ---> <button onclick="redirectToLogin()" type="button" name="redirectButton" id="redirectButton">Login</button>
+        </p>   
+        <p>
+            if you NOT a member press  ---><button onclick="redirectToRegister()" type="button" name="Sign upButton" id="Sign upButton">Sign up</button>
+        </p>
+        <br/>
+        <a href="index.html">Back to home page</a>
+    </div>
+</body>
+</html>

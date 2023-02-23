@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limited access</title>
+    <script>
+        function redirectToLogin(){
+            window.location.href = "./login.html";
+        }
+        function redirectToRegister(){
+            window.location.href = "./registretion.html";
+        }
+        function redirectToContact(){
+            window.location.href = "./contact.html";
+        }
+    </script>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .content {
+                text-align: center;
+            }
+        </style>
+</head>
+<body>
+    <div class="content">
+        <h1>
+            Error
+        </h1>
+        <p>
+            You are trying to access to a limited access page</br>
+            you can Login to gain access.</br>
+            if you are NOT a member then Sign up and then Login.
+        </p>
+        <button onclick="redirectToLogin()" type="button" name="LoginButton" id="LoginButton">Login</button>
+        <button onclick="redirectToRegister()" type="button" name="Sign upButton" id="Sign upButton">Sign up</button>
+        <br/>
+        <br/>
+        <a href="index.html">Back to home page</a>
+    </div>
+</body>
+</html>

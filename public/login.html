@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script>
+        function redirectToRegister(){
+            window.location.href = "./registretion.html";
+        }
+    </script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .content {
+                text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>
+            Login
+        </h1>
+        <p>
+            Hello, you are about to login<br>
+            after that you will have Session with the website.
+        </p>
+        <form method="post" action="http://localhost:3001/login">
+            <input type="email" name="email" id="email" placeholder="Email" /> <br/>
+            <input type="password" name="password" id="password" placeholder="Password" /> <br/>
+            <br/>
+            <button type="submit" name="loginButton" id="loginButton">Login</button>
+            <button onclick="redirectToRegister()" type="button" name="redirectButton" id="redirectButton">Sign up</button>
+            <br/>
+            <br/>
+            <a href="index.html">Back to home page</a>
+        </form>
+    </div>
+</body>
+</html>

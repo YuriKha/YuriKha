@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <script>
+        function redirectToLogin(){
+            window.location.href = "./login.html";
+        }
+    </script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .content {
+                text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>
+            Registration
+        </h1>
+        <p>
+            Hello, you are about to register<br>
+            when you finish you will receive<br>
+            Email from us.
+        </p>                    
+        <form method="post" action="http://localhost:3001/register">
+            <input type="text" name="firstName" id="firstName" placeholder="First name" /> <br/>
+            <input type="text" name="lastName" id="lastName" placeholder="Last name" /> <br/>
+            <input type="email" name="email" id="email" placeholder="Email" /> <br/>
+            <input type="password" name="password" id="password" placeholder="Password" /> <br/>
+            <br/>
+            <button type="submit" name="registerButton" id="registerButton">Send</button>
+            <button onclick="redirectToLogin()" type="button" name="redirectButton" id="redirectButton">Login</button>
+            <br/>
+            <br/>
+            <a href="index.html">Back to home page</a>
+        </form>
+    </div>
+</body>
+</html>
